@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap');
+
+/* =================================== */
+/* Lenis */
+
+html.lenis {
+	height: auto;
+}
+
+.lenis.lenis-smooth {
+	scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+	overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+	overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+	pointer-events: none;
+}
+
+/* =================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Libre Caslon Text', serif;
+	font-size: 62.5%;
+	background: #0f0f0f;
+	overflow: hidden;
+}
+
+main {
+	display: flex;
+	width: fit-content;
+}
+
+.section {
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	place-items: center;
+	background: #0f0f0f;
+}
+
+.section:nth-child(2n) {
+	background: #151515;
+}
+
+h2 {
+	font-size: 10rem;
+	font-weight: normal;
+	color: #fff;
+}
+
+h2 span {
+	display: inline-block;
+}
+
+.cover {
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #151515;
+	display: grid;
+	place-items: center;
+}
+
+.cover p {
+	white-space: nowrap;
+	font-size: 10rem;
+	color: #fff;
+}

@@ -1,0 +1,21 @@
+{
+	"name": "horizontal-scroll",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"start": "vite",
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"typescript": "^5.0.2",
+		"vite": "^4.4.5"
+	},
+	"dependencies": {
+		"@studio-freight/lenis": "^1.0.22",
+		"gsap": "^3.12.2",
+		"overlayscrollbars": "^2.3.0"
+	}
+}
