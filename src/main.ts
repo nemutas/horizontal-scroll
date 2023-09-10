@@ -11,6 +11,9 @@ gsap.registerPlugin(ScrollTrigger)
 
 const lenis = new Lenis({
 	orientation: 'horizontal',
+	syncTouch: true,
+	smoothTouch: true,
+	gestureOrientation: ScrollTrigger.isTouch ? 'horizontal' : 'vertical',
 })
 
 lenis.on('scroll', ScrollTrigger.update)
@@ -23,7 +26,6 @@ gsap.ticker.lagSmoothing(0)
 
 // =============================
 // Overlay Scrollbar
-
 OverlayScrollbars.plugin(ClickScrollPlugin)
 
 OverlayScrollbars(document.body, {
